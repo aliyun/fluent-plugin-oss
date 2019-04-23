@@ -17,17 +17,53 @@ This plugin will poll events from MNS queue and extract object keys from these e
 
 ## Installation
 
-Simply use RubyGems(Run command in td-agent installation directory):
+Simply use RubyGems(https://rubygems.org/gems/fluent-plugin-aliyun-oss)!
+
+If you are using td-agent, please make sure to use td-agent’s td-agent-gem command. td-agent has own Ruby so you should install gems into td-agent’s Ruby, not other Ruby. Otherwise (e.g. you use the command belonging to system, rvm, `gem install fluent-plugin-aliyun-oss` etc.), you won’t be able to find your “installed” plugins.
+
 ```bash
-[root@master td-agent]# ./embedded/bin/fluent-gem install fluent-plugin-oss
+[root@master td-agent]# /usr/sbin/td-agent-gem install fluent-plugin-aliyun-oss
+Building native extensions.  This could take a while...
+Successfully installed unf_ext-0.0.7.6
+Fetching: unf-0.1.4.gem (100%)
+Successfully installed unf-0.1.4
+Fetching: domain_name-0.5.20180417.gem (100%)
+Successfully installed domain_name-0.5.20180417
+Fetching: http-cookie-1.0.3.gem (100%)
+Successfully installed http-cookie-1.0.3
+Fetching: rest-client-2.0.2.gem (100%)
+Successfully installed rest-client-2.0.2
+Fetching: aliyun-sdk-0.7.0.gem (100%)
+Building native extensions.  This could take a while...
+Successfully installed aliyun-sdk-0.7.0
+Fetching: fluent-plugin-aliyun-oss-0.0.1.gem (100%)
+Successfully installed fluent-plugin-aliyun-oss-0.0.1
+Parsing documentation for unf_ext-0.0.7.6
+Installing ri documentation for unf_ext-0.0.7.6
+Parsing documentation for unf-0.1.4
+Installing ri documentation for unf-0.1.4
+Parsing documentation for domain_name-0.5.20180417
+Installing ri documentation for domain_name-0.5.20180417
+Parsing documentation for http-cookie-1.0.3
+Installing ri documentation for http-cookie-1.0.3
+Parsing documentation for rest-client-2.0.2
+Installing ri documentation for rest-client-2.0.2
+Parsing documentation for aliyun-sdk-0.7.0
+Installing ri documentation for aliyun-sdk-0.7.0
+Parsing documentation for fluent-plugin-aliyun-oss-0.0.1
+Installing ri documentation for fluent-plugin-aliyun-oss-0.0.1
+Done installing documentation for unf_ext, unf, domain_name, http-cookie, rest-client, aliyun-sdk, fluent-plugin-aliyun-oss after 10 seconds
+7 gems installed
 ```
+
 Then, you can check installed plugin
+
 ```bash
-[root@master td-agent]# ./embedded/bin/fluent-gem list fluent-plugin-oss
+[root@master td-agent]# /usr/sbin/td-agent-gem list fluent-plugin-aliyun-oss
 
 *** LOCAL GEMS ***
 
-fluent-plugin-oss (0.0.1)
+fluent-plugin-aliyun-oss (0.0.1)
 ```
 
 ## Development

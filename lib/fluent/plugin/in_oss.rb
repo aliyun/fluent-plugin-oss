@@ -11,7 +11,7 @@ require 'zlib'
 module Fluent
   # Fluent OSS Plugin
   module Plugin
-    # OSSOutput class implementation
+    # OSSInput class implementation
     class OSSInput < Input
       Fluent::Plugin.register_input('oss', self)
 

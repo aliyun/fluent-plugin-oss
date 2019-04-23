@@ -1,8 +1,8 @@
 $LOAD_PATH.push File.expand_path('lib', __dir__)
 
 Gem::Specification.new do |gem|
-  gem.name        = 'fluent-plugin-oss'
-  gem.description = 'Aliyun OSS output plugin for Fluentd event collector'
+  gem.name        = 'fluent-plugin-aliyun-oss'
+  gem.description = 'Aliyun OSS plugin for Fluentd event collector'
   gem.license     = 'Apache-2.0'
   gem.homepage    = 'https://github.com/aliyun/fluent-plugin-oss'
   gem.summary     = gem.description
