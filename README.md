@@ -19,7 +19,7 @@ This plugin will poll events from MNS queue and extract object keys from these e
 
 Simply use RubyGems(https://rubygems.org/gems/fluent-plugin-aliyun-oss)!
 
-If you are using td-agent, please make sure to use td-agent’s td-agent-gem command. td-agent has own Ruby so you should install gems into td-agent’s Ruby, not other Ruby. Otherwise (e.g. you use the command belonging to system, rvm, `gem install fluent-plugin-aliyun-oss`, etc.), you won’t be able to find your “installed” plugins.
+If you are using td-agent, please make sure to use td-agent’s td-agent-gem command(**`/usr/sbin/td-agent-gem install fluent-plugin-aliyun-oss`**). td-agent has own Ruby so you should install gems into td-agent’s Ruby, not other Ruby. Otherwise (e.g. you use the command belonging to system, rvm, `gem install fluent-plugin-aliyun-oss`, etc.), you won’t be able to find your “installed” plugins.
 
 ```bash
 [root@master td-agent]# /usr/sbin/td-agent-gem install fluent-plugin-aliyun-oss
