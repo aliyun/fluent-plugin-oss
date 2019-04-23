@@ -1,0 +1,6 @@
+source 'http://rubygems.org'
+
+gem 'rspec'
+gem 'uuidtools'
+
+gemspec
