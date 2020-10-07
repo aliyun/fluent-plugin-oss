@@ -24,9 +24,9 @@ module Fluent
       desc 'Your bucket name'
       config_param :bucket, :string
       desc 'Your access key id'
-      config_param :access_key_id, :string
+      config_param :access_key_id, :string, secret: true
       desc 'Your access secret key'
-      config_param :access_key_secret, :string
+      config_param :access_key_secret, :string, secret: true
       config_param :upload_crc_enable, :bool, default: true
       config_param :download_crc_enable, :bool, default: true
       desc 'Timeout for open connections'
